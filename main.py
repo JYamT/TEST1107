@@ -20,9 +20,9 @@ import tempfile  # 임시 파일 생성 및 관리 모듈
 # 애플리케이션 실행 함수 정의
 def main():
     # 페이지 설정 (Streamlit 상단 바 구성)
-    st.set_page_config(page_title="단축키", page_icon="🖱️")  # 웹 페이지 제목과 아이콘 설정
+    st.set_page_config(page_title="교육공무원", page_icon="📘")  # 웹 페이지 제목과 아이콘 설정
     st.image('energy.png')  # 상단에 이미지를 표시
-    st.title("_:red[단축키가 궁금해?]_ 😎")  # 제목 표시 (단축키가 궁금해?)
+    st.title("_:red[교육공무원법]_ 🧑‍🏫👩‍🏫")  # 제목 표시 (교육공무원법)
     st.header("😶주의! 이 챗봇은 참고용으로 사용하세요!", divider='rainbow')  # 주의사항 표시
 
     # 세션 상태 초기화
