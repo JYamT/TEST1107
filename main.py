@@ -6,7 +6,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter  # 텍스트�
 from langchain_huggingface import HuggingFaceEmbeddings  # HuggingFace 모델을 통한 텍스트 임베딩 처리
 from langchain.vectorstores import FAISS  # FAISS 벡터 스토어를 통해 텍스트 검색 기능 구현
 from langchain_community.callbacks import get_openai_callback  # OpenAI 응답을 받아오는 콜백
-from langchain.memory import ConversationBufferMemory  # 대화 내용을 저장하는 메모리
+from langchain.memory import ConversationBufferMemory  # 대화 내용을 저장하는 메모리w
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory  # Streamlit에서 채팅 기록 관리
 from langchain.chains import ConversationalRetrievalChain  # 문서 검색과 회신을 결합한 대화 체인
 from langchain.chat_models import ChatOpenAI  # OpenAI 언어 모델 사용을 위한 모듈
@@ -22,8 +22,9 @@ def main():
     # 페이지 설정 (Streamlit 상단 바 구성)
     st.set_page_config(page_title="교육공무원", page_icon="📘")  # 웹 페이지 제목과 아이콘 설정
     st.image('everything.png')  # 상단에 이미지를 표시
-    st.title("_[교육공무원법]_ 🧑‍🏫👩‍🏫")  # 제목 표시 (교육공무원법)
-    st.header("😶주의! 모든 정보는 참고용으로 사용하세요!", divider='rainbow')  # 주의사항 표시
+    st.title("_[교육공무원법에 대한 모든 것]_")  # 제목 표시 (교육공무원법)
+    st.caption("_서울특별시교육청 기준_", divider='rainbow')  # 주의사항 표시
+    st.caption("모든 정보는 참고용으로 사용해주세요.") # 주의사항 표시
 
     # 세션 상태 초기화
     # Streamlit 세션에서 대화 상태, 대화 기록, 처리 완료 여부 등을 초기화하여 유지
