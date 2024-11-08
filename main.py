@@ -23,7 +23,7 @@ def main():
     st.set_page_config(page_title="교육공무원", page_icon="📘")  # 웹 페이지 제목과 아이콘 설정
     st.image('everything.png')  # 상단에 이미지를 표시
     st.title("교육공무원법에 대해 물어보세요")  # 제목 표시 (교육공무원법)
-    st.caption(":blue[서울특별시교육청] 기준", divider='rainbow')  # 주의사항 표시
+    st.caption(":Blue[서울특별시교육청] 기준", divider='rainbow')  # 주의사항 표시
     st.caption("모든 정보는 참고용으로 사용해주세요", divider='rainbow')  # 주의사항 표시    
 
     # 세션 상태 초기화
